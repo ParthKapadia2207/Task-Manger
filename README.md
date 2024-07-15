@@ -40,8 +40,6 @@ Please refer to the LICENSE in the repo.
 
 ## Deployment 
 
-Github Repository: 
+Github Repository: https://github.com/ParthKapadia2207/Task-Manger
 
-Deployed Site: 
-
-Screenshot: !
+Deployed Site: parthkapadia2207.github.io/Task-Manger/
