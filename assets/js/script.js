@@ -6,6 +6,19 @@ $(document).ready(function () {
     const taskNameInput = $("#task-name-input");
     const taskDueDate = $("#task-due-date");
     const taskDescription = $("#task-description");
+
+
+      // it will display date and time 
+  function displayTime() {
+    const thisMinute = dayjs().format("MMM DD, YYYY [at] hh:mm a");
+    timeDisplay.text(thisMinute);
+  }
+
+  function saveTasksToStorage(tasks) {
+    console.log("Saving tasks to storage:", tasks);
+    localStorage.setItem("tasks", JSON.stringify(tasks));
+  }
+
     
 // Retrieve tasks and nextId from localStorage
 let taskList = JSON.parse(localStorage.getItem("tasks"));
